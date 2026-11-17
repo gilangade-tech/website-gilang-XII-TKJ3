@@ -1,0 +1,397 @@
+
+/* =========================
+   RESET CSS
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080b18;
+    color: #f1f5f9;
+    overflow-x: hidden;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+header {
+    background: rgba(12, 16, 35, 0.95);
+    padding: 22px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(0, 217, 255, 0.2);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #00e5ff;
+    font-size: 27px;
+    font-weight: bold;
+    text-shadow: 0 0 15px #00e5ff;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar ul li a {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #00e5ff;
+    text-shadow: 0 0 10px #00e5ff;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 10%;
+    gap: 40px;
+    background:
+        radial-gradient(circle at 80% 40%,
+        rgba(91, 33, 182, 0.2), transparent 35%),
+        #080b18;
+}
+
+.hero-content h3 {
+    color: #00e5ff;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    color: white;
+    margin: 10px 0;
+}
+
+.hero-content h2 {
+    color: #a78bfa;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.hero-content p {
+    color: #cbd5e1;
+    line-height: 1.9;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.hero-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #00e5ff;
+    box-shadow:
+        0 0 20px #00e5ff,
+        0 0 50px rgba(0, 229, 255, 0.4);
+    transition: 0.4s;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 35px #00e5ff;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #00c6ff, #7c3aed);
+    color: white;
+    padding: 14px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(0, 198, 255, 0.3);
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px #00c6ff;
+}
+
+/* =========================
+   GENERAL SECTION
+========================= */
+section {
+    padding: 80px 10%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 35px;
+    color: #00e5ff;
+    margin-bottom: 45px;
+    text-shadow: 0 0 12px rgba(0, 229, 255, 0.4);
+}
+
+/* =========================
+   ABOUT
+========================= */
+.about {
+    background: #0d1226;
+    text-align: center;
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 2;
+    color: #cbd5e1;
+    font-size: 17px;
+}
+
+/* =========================
+   SKILLS
+========================= */
+.skills {
+    background: #080b18;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    background: linear-gradient(
+        145deg,
+        rgba(30, 41, 80, 0.8),
+        rgba(15, 23, 42, 0.9)
+    );
+    border: 1px solid rgba(0, 229, 255, 0.3);
+    padding: 35px;
+    width: 250px;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    transition: 0.4s;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    border-color: #00e5ff;
+    box-shadow: 0 0 20px rgba(0,229,255,0.3);
+}
+
+.skill-card h3 {
+    color: #00e5ff;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.skill-card p {
+    color: #cbd5e1;
+    line-height: 1.7;
+}
+
+/* =========================
+   HOBBIES
+========================= */
+.hobbies {
+    background: #0d1226;
+}
+
+.hobby-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.hobby-card {
+    background: rgba(30, 41, 80, 0.65);
+    border: 1px solid rgba(167, 139, 250, 0.35);
+    padding: 35px 20px;
+    width: 230px;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    transition: 0.4s;
+}
+
+.hobby-card:hover {
+    transform: translateY(-10px);
+    background: rgba(91, 33, 182, 0.25);
+    border-color: #a78bfa;
+    box-shadow: 0 0 25px rgba(167,139,250,0.3);
+}
+
+.hobby-card h3 {
+    color: #a78bfa;
+    margin-bottom: 15px;
+    font-size: 19px;
+}
+
+.hobby-card p {
+    color: #cbd5e1;
+    line-height: 1.8;
+}
+
+/* =========================
+   PROJECTS
+========================= */
+.projects {
+    background: #080b18;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 280px;
+    background: linear-gradient(
+        145deg,
+        #1e293b,
+        #111827
+    );
+    padding: 35px;
+    border-radius: 18px;
+    border: 1px solid rgba(0, 229, 255, 0.25);
+    transition: 0.4s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: #00e5ff;
+    box-shadow: 0 0 25px rgba(0,229,255,0.25);
+}
+
+.project-card h3 {
+    margin-bottom: 15px;
+    color: #00e5ff;
+}
+
+.project-card p {
+    color: #cbd5e1;
+    line-height: 1.8;
+}
+
+/* =========================
+   CONTACT
+========================= */
+.contact {
+    background: #0d1226;
+    text-align: center;
+    line-height: 2.5;
+}
+
+.contact p {
+    color: #cbd5e1;
+    transition: 0.3s;
+}
+
+.contact p:hover {
+    color: #00e5ff;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background: #050711;
+    color: #94a3b8;
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid rgba(0, 229, 255, 0.2);
+}
+
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px 5%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .navbar ul li a {
+        font-size: 13px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 60px 7%;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-content h2 {
+        font-size: 21px;
+    }
+
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    section {
+        padding: 65px 7%;
+    }
+
+    .skill-container,
+    .hobby-container,
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-card,
+    .hobby-card,
+    .project-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
